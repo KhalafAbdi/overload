@@ -1,13 +1,14 @@
 {
-  "name": "docs",
+  "name": "app",
   "version": "0.1.0",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 3000 --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --max-warnings 0",
+    "format": "biome lint --write .",
+    "lint": "biome lint .",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
@@ -17,7 +18,6 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@types/node": "^20",
     "@types/react": "18.3.1",

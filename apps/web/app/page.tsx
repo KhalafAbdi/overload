@@ -1,6 +1,6 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { allPosts } from "content-collections";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -63,9 +63,17 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
-          Open alert
-        </Button>
+        <button className={styles.secondary}>Open alert</button>
+        <ul>
+          {allPosts.map((post) => (
+            <li key={post._meta.path}>
+              <a href={`/posts/${post._meta.path}`}>
+                <h3>{post.title}</h3>
+                <p>{post.summary}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
       </main>
       <footer className={styles.footer}>
         <a

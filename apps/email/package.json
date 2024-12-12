@@ -1,0 +1,22 @@
+{
+  "name": "email",
+  "version": "0.1.6",
+  "private": true,
+  "scripts": {
+    "build": "email build",
+    "dev": "email dev --port 3003",
+    "export": "email export",
+    "format": "biome lint --write .",
+    "lint": "biome lint ."
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.31",
+    "react-dom": "19.0.0",
+    "react": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "react-email": "3.0.4"
+  }
+}
