@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "hono": "^4.6.13"
+    "@repo/env": "^0.0.0",
+    "hono": "^4.6.13",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "tsx": "^4.19.2"
   }
 }

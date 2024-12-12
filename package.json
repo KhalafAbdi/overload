@@ -4,7 +4,10 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "db:migrate": "cd apps/api && npx drizzle-kit migrate",
+    "db:generate": "cd apps/api && npx drizzle-kit generate",
+    "db:pull": "cd apps/api && npx drizzle-kit pull"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
