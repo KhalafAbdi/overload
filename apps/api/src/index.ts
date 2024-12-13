@@ -7,7 +7,7 @@ app.get("/", (c) => {
   return c.text("Hello Hono!");
 });
 
-app.get("/todos", (c) => {
+app.get("/todos", async (c) => {
   return c.text("Hello todos");
 });
 
