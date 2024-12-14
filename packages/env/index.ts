@@ -7,6 +7,8 @@ const server: Parameters<typeof createEnv>[0]["server"] = {
 
 const client: Parameters<typeof createEnv>[0]["client"] = {};
 
+console.log("@@@@@@@@@@", process.env.DATABASE_URL);
+
 export const env = createEnv({
   client,
   server,
