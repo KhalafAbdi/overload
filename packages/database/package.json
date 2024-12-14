@@ -9,7 +9,8 @@
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "format": "biome lint --write .",
     "lint": "biome lint .",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "test-db": "tsx test.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

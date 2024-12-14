@@ -16,6 +16,7 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@repo/typescript-config": "*",
     "@types/node": "^20.11.17",
     "tsx": "^4.19.2"
   }
